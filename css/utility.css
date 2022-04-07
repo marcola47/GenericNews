@@ -18,6 +18,7 @@ img {display: block;}
   --orange: #f99500;
   --blue: #009cff;
   --purple: #a66bbe;
+  --green: #0cd649;
 }
 
 /*******************************************************************************************************/
@@ -42,7 +43,8 @@ img {display: block;}
 
 .tag
 {
-  display: inline-block;
+  display: inline;
+  z-index: 1;
   border-radius: 15px;
   padding: 8px;
 
@@ -51,9 +53,16 @@ img {display: block;}
   text-transform: uppercase;
 }
 
+.tag-card
+{
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
 .tag-blue {background-color: var(--blue);}
 .tag-purple {background-color: var(--purple);}
 .tag-orange {background-color: var(--orange);}
+.tag-green {background-color: var(--green);}
 
 /*******************************************************************************************************/
 /*** Navigation ***/
