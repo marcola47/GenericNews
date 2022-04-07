@@ -1,0 +1,13 @@
+Prefabs:
+
+- Horizontal rectangle
+- Vertical rectangle
+- Red btns
+- Orange btns
+- Colored tags
+
+
+nav menu padding:
+  - 128px
+  - 96px
+  - 64px

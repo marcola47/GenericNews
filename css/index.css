@@ -1,0 +1,99 @@
+/*** News slider title ***/
+.news-slider-title
+{
+  text-align: center;
+  margin-top: 12px;
+}
+
+.slider-section-split
+{
+  width: 80%;
+  height: 1px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  margin-inline: auto;
+  background-color: rgba(0, 0, 0, 0.164);
+}
+
+/*** Slider frame ***/
+.news-slider-container
+{
+  width: 100vw;
+  height: 70vh;
+}
+
+.news-slider-content::-webkit-scrollbar {width: 0; background: transparent;}
+.news-slider-content::-webkit-scrollbar-thumb {background: transparent;}
+.news-slider-content
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*** Individual slider frame ***/
+/* News frame and image background settings */
+.news-content
+{
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  scroll-snap-align: start;
+  pointer-events: none;
+
+  height: 100%;
+  width: 100%;
+  padding: 96px 128px;
+}
+
+.news-content::before
+{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#news-01 {background: url(../img/slider/slider_01.jpg) no-repeat center center/cover;}
+#news-02 {background: url(../img/slider/slider_02.jpg) no-repeat center center/cover;}
+#news-03 {background: url(../img/slider/slider_03.jpg) no-repeat center center/cover;}
+#news-04 {background: url(../img/slider/slider_04.jpg) no-repeat center center/cover;}
+#news-05 {background: url(../img/slider/slider_05.jpg) no-repeat center center/cover;}
+
+/* Overall spacing and settings */
+.news-content > *
+{
+  color: #fff;
+  z-index: 1;
+}
+
+/* Text settings */
+.news-content .news-headline
+{
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+}
+
+.news-content .news-brief
+{
+  max-width: 720px;
+  margin-top: 64px;
+
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+/* Button settings */
+.news-content .btn
+{
+  width: 128px;
+  margin-top: 24px;
+  pointer-events: visible;
+}
