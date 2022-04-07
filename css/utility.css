@@ -181,12 +181,12 @@ img {display: block;}
 
 form
 {
-  background-color: #eaeaea;
+  background-color: #f2f2f2;
   color: #222;
   border-radius: 3px;
 }
 
-input {background-color: #eaeaea;}
+input {background-color: #f2f2f2;}
 input::placeholder {color: #222;}
 
 .nav-search .search-bar:focus, .nav-search .search-bar:hover {width: 192px;}
