@@ -38,7 +38,19 @@ onUpdate();
 
 /*********************************************************************************************/
 /* News slider */
-document.querySelector(".news-slider-content").addEventListener("wheel", event => {
-  if (event.deltaY > 0) {event.target.scrollBy(1, 0);}
-  else {event.target.scrollBy(-1, 0);}
-})
+const sliderContainer = document.querySelector(".news-slider-content")
+
+sliderContainer.addEventListener("wheel", event =>
+{
+  if (event.deltaY > 0)
+  {
+    event.target.scrollBy(300, 0);
+    event.preventDefault();
+  }
+
+  else
+  {
+    event.target.scrollBy(-300, 0);
+    event.preventDefault();
+  }
+});

@@ -1,25 +1,19 @@
-/*** News slider title ***/
-.news-slider-title
+/***** Variables *****/
+:root
 {
-  text-align: center;
-  margin-top: 12px;
+  --primary-red: #be2e2f;
+  --orange: #f99500;
+  --blue: #009cff;
+  --purple: #a66bbe;
 }
 
-.slider-section-split
-{
-  width: 80%;
-  height: 1px;
-  margin-top: 4px;
-  margin-bottom: 12px;
-  margin-inline: auto;
-  background-color: rgba(0, 0, 0, 0.164);
-}
-
+/***** News slider *****/
 /*** Slider frame ***/
 .news-slider-container
 {
   width: 100vw;
   height: 70vh;
+  margin-bottom: 32px;
 }
 
 .news-slider-content::-webkit-scrollbar {width: 0; background: transparent;}
@@ -36,28 +30,40 @@
 }
 
 /*** Individual slider frame ***/
-/* News frame and image background settings */
-.news-content
+/* News frame and background image settings */
+.news-content-wrapper
 {
   flex: none;
-  display: flex;
-  flex-direction: column;
   position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 20fr 1fr;
 
   scroll-snap-align: start;
   pointer-events: none;
 
   height: 100%;
   width: 100%;
-  padding: 96px 128px;
+  padding: 64px 16px;
 }
 
-.news-content::before
+.news-content-wrapper::before
 {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.swipe-arrow i {font-size: 2rem; margin-bottom: 4px;}
+.swipe-arrow
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-inline: 64px;
 }
 
 #news-01 {background: url(../img/slider/slider_01.jpg) no-repeat center center/cover;}
@@ -67,20 +73,20 @@
 #news-05 {background: url(../img/slider/slider_05.jpg) no-repeat center center/cover;}
 
 /* Overall spacing and settings */
-.news-content > *
+.news-content-wrapper > *
 {
   color: #fff;
   z-index: 1;
 }
 
 /* Text settings */
-.news-content .news-headline
+.news-content-wrapper .news-headline
 {
   font-size: 2.8rem;
   letter-spacing: 3px;
 }
 
-.news-content .news-brief
+.news-content-wrapper .news-brief
 {
   max-width: 720px;
   margin-top: 64px;
@@ -91,9 +97,97 @@
 }
 
 /* Button settings */
-.news-content .btn
+.news-content-wrapper .btn
 {
   width: 128px;
   margin-top: 24px;
   pointer-events: visible;
+}
+
+/***** Showcase section *****/
+/*** Div configs ***/
+.showcase-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  height: 600px;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.showcase-content > * {border-radius: 2px;}
+.showcase-content > *::before {border-radius: 2px;}
+.showcase-content
+{
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 8px;
+}
+
+/*** Article section configs ***/
+.showcase-article
+{
+  grid-column: 1;
+  grid-row: 1 / span 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 24px;
+  position: relative;
+
+  background: url(../img/showcase/article_ceo_of_sex.jpg) no-repeat center top/cover;
+}
+
+
+.showcase-section-title, .showcase-section-location, .showcase-section-desc {color: #fff; z-index: 1;}
+
+.showcase-section-location {margin-bottom: 42px; font-size: 1rem;}
+.showcase-section-title {font-size: 2.6rem; margin-bottom: 8px;}
+
+
+
+/*** Video section configs ***/
+.showcase-video
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  padding: 42px 16px;
+}
+
+#video-01
+{
+  position: relative;
+
+  grid-column: 2;
+  grid-row: 1;
+  background: url(../img/showcase/video_seal.jpg) no-repeat center bottom/cover;
+}
+
+#video-02
+{
+  position: relative;
+
+  grid-column: 2;
+  grid-row: 2;
+  background: url(../img/showcase/video_pillows.jpg) no-repeat center top/cover;
+}
+
+
+.showcase-article::before, .showcase-video::before
+{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
