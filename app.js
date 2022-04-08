@@ -25,10 +25,14 @@ darkThemeIcon = document.querySelector('link#dark-scheme-icon');
 
 function onUpdate()
 {
-  if (matcher.matches) {
+  if (matcher.matches)
+  {
     lightThemeIcon.remove();
     document.head.append(darkThemeIcon);
-  } else {
+  }
+  
+  else
+  {
     document.head.append(lightThemeIcon);
     darkThemeIcon.remove();
   }

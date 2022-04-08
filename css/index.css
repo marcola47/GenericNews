@@ -55,7 +55,6 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.swipe-arrow i {font-size: 2rem; margin-bottom: 4px;}
 .swipe-arrow
 {
   display: flex;
@@ -65,8 +64,22 @@
   pointer-events: visible;
 
   margin-inline: 64px;
-  background-color: #00000000;
   font-family: 'Lato', sans-serif;
+}
+
+.swipe-arrow i
+{
+  font-size: 2rem;
+  margin-bottom: 4px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.swipe-arrow i:hover,
+.swipe-arrow i:focus
+{
+  transform: scale(1.2);
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.15);
 }
 
 #news-01 {background: url(../img/slider/slider_01.jpg) no-repeat center center/cover;}
