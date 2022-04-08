@@ -53,12 +53,6 @@ img {display: block;}
   text-transform: uppercase;
 }
 
-.tag-card
-{
-  align-self: flex-start;
-  justify-self: flex-start;
-}
-
 .tag-blue {background-color: var(--blue);}
 .tag-purple {background-color: var(--purple);}
 .tag-orange {background-color: var(--orange);}
