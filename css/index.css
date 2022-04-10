@@ -12,12 +12,19 @@
 .news-slider-container
 {
   width: 100vw;
-  height: 65vh;
+  height: 75vh;
   margin-bottom: 96px;
 }
 
-.news-slider-content::-webkit-scrollbar {width: 0; background: transparent;}
-.news-slider-content::-webkit-scrollbar-thumb {background: transparent;}
+.news-slider-content::-webkit-scrollbar
+{width: 0; background: transparent;}
+
+.news-slider-content::-webkit-scrollbar-thumb
+{background: transparent;}
+
+.news-slider-content::-webkit-scrollbar-thumb:hover
+{background: transparent;}
+
 .news-slider-content
 {
   width: 100%;
@@ -42,8 +49,8 @@
   scroll-snap-align: start;
   pointer-events: none;
 
-  height: 100%;
   width: 100%;
+  height: 100%;
   padding: 64px 16px;
 }
 
@@ -61,22 +68,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  pointer-events: visible;
 
   margin-inline: 64px;
+  pointer-events: visible;
   font-family: 'Lato', sans-serif;
 }
 
 .swipe-arrow i
 {
-  font-size: 2rem;
   margin-bottom: 4px;
+  font-size: 2rem;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
 
-.swipe-arrow i:hover,
-.swipe-arrow i:focus
+.swipe-arrow i:hover, .swipe-arrow i:focus
 {
   transform: scale(1.2);
   text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.15);
@@ -133,8 +139,15 @@
   margin-bottom: 96px;
 }
 
-.showcase-content > * {border-radius: 2px; transition: all 0.1s ease-in-out;}
-.showcase-content > *::before {border-radius: 2px;}
+.showcase-content > *
+{
+  border-radius: 2px;
+  transition: all 0.1s ease-in-out;
+}
+
+.showcase-content > *::before
+{border-radius: 2px;}
+
 .showcase-content
 {
   max-height: 100%;
@@ -148,9 +161,7 @@
 
 .showcase-content > *:hover,
 .showcase-content > *:focus
-{
-  transform: scale(1.01);
-}
+{transform: scale(1.01);}
 
 /*** Article section configs ***/
 .showcase-article
@@ -162,13 +173,18 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 4fr 10fr;
 
-  padding: 24px;
   position: relative;
+  padding: 24px;
 
   background: url(../img/showcase/article_ceo_of_sex.jpg) no-repeat center top/cover;
 }
 
-.showcase-section-title, .showcase-section-location {color: #fff; z-index: 1; text-shadow: 1px 1px 3px #000;}
+.showcase-section-title, .showcase-section-location
+{
+  z-index: 1;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
 
 .showcase-section-location
 {
@@ -234,7 +250,9 @@
   grid-gap: 8px;
 }
 
-.editor-news-section:hover {transform: scale(1.01);}
+.editor-news-section:hover
+{transform: scale(1.01);}
+
 .editor-news-section
 {
   place-items: center;
