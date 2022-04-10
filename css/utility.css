@@ -23,21 +23,43 @@ img {display: block;}
 
 /*******************************************************************************************************/
 /*** Buttons ***/
-.btn:hover {opacity: 0.85;}
+.btn:hover
+{opacity: 0.9;}
 
 .btn
 {
   display: inline-block;
   text-decoration: none;
-  padding: 12px 24px;
   font-weight: 700;
+
+  padding: 12px 24px;
   border-radius: 2px;
   transition: all 0.15s ease-in-out;
 }
 
-.btn-simple i {transition: transform 0.1s ease-in-out 0.05s;}
-.btn-simple:hover > i {transform: translateX(5px);}
-.btn-simple:hover {opacity: 0.9;}
+.btn-see-more:hover
+{opacity: 0.9;}
+
+.btn-see-more
+{
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+  padding-block: 16px;
+
+  border-radius: 2px;
+  color: #fff;
+  background-color: var(--primary-red);
+  transition: all 0.1s ease-in-out 0.05s;
+}
+
+.btn-simple:hover > i
+{transform: translateX(5px);}
+
+.btn-simple:hover
+{opacity: 0.9;}
+
 .btn-simple
 {
   margin: 8px 4px;
@@ -56,7 +78,10 @@ img {display: block;}
 }
 
 .btn-simple i
-{font-size: 1rem;}
+{
+  font-size: 1rem;
+  transition: transform 0.1s ease-in-out 0.05s;
+}
 
 .btn-red
 {background-color: var(--primary-red); color: #fff;}

@@ -117,7 +117,7 @@
 /* Button settings */
 .news-content-wrapper .btn
 {
-  width: 128px;
+  width: 142px;
   margin-top: 24px;
   pointer-events: visible;
 }
@@ -302,6 +302,12 @@
 }
 
 /*** Main section ***/
+.for-you-main
+{display: grid;}
+
+.for-you-news-section:hover
+{transform: scale(1.01);}
+
 .for-you-news-section
 {
   display: grid;
@@ -314,6 +320,7 @@
   border-radius: 2px;
   border: solid 1px #99999939;
   background-color: #fff;
+  transition: all 0.1s ease-in-out 0.05s;
 }
 
 .for-you-news-section img
@@ -341,6 +348,7 @@
   margin-bottom: 24px;
 
   background-color: #fff;
+  border: solid 1px #99999939;
 }
 
 .info-section-weather span
@@ -399,7 +407,7 @@
   background-color: #fff;
   padding-block: 16px;
 
-  border: 1px solid rgba(92, 92, 92, 0.2);
+  border: solid 1px #99999939;
 }
 
 .most-read-title
@@ -407,7 +415,7 @@
   text-align: center;
   margin-bottom: 16px;
   padding-bottom: 8px;
-  border-bottom: 1px solid rgba(92, 92, 92, 0.15);
+  border-bottom: solid 1px #99999939;
 }
 
 .most-read-news-section
