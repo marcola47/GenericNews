@@ -1,13 +1,21 @@
-Prefabs:
-
-- Horizontal rectangle
-- Vertical rectangle
-- Red btns
-- Orange btns
-- Colored tags
-
-
-nav menu padding:
+Nav Menu Padding:
   - 128px
   - 96px
   - 64px
+
+Mobile:
+  - Remove search button (until I figure out a way of making it decent)
+
+Hot Topics:
+  - Make it a single column
+  - Video sections smaller
+
+Editor Picks:
+  - Make it a single column
+  - Horizontal boxes become Vertical
+
+Interesting For You:
+  - News on top of weather report and most read
+
+Footer:
+  - Make it a single column
