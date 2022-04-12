@@ -38,7 +38,7 @@
 
 /*** Individual slider frame ***/
 /* News frame and background image settings */
-.news-content-wrapper
+.news-content-container
 {
   flex: none;
   position: relative;
@@ -54,7 +54,7 @@
   padding: 64px 16px;
 }
 
-.news-content-wrapper::before
+.news-content-container::before
 {
   content: "";
   position: absolute;
@@ -95,21 +95,21 @@
 #news-05 {background: url(../img/slider/slider_05.jpg) no-repeat center center/cover;}
 
 /* Overall spacing and settings */
-.news-content-wrapper > *
+.news-content-container > *
 {
   color: #fff;
   z-index: 1;
 }
 
 /* Text settings */
-.news-content-wrapper .news-headline
+.news-content-container .news-headline
 {
   font-size: 2.8rem;
   letter-spacing: 3px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.news-content-wrapper .news-brief
+.news-content-container .news-brief
 {
   max-width: 720px;
   margin-top: 64px;
@@ -121,7 +121,7 @@
 }
 
 /* Button settings */
-.news-content-wrapper .btn
+.news-content-container .btn
 {
   width: 142px;
   margin-top: 24px;
