@@ -21,10 +21,7 @@
 {background-color: var(--primary-red-highlight);}
 
 ::-webkit-scrollbar-thumb
-{
-  background-color: var(--primary-red);
-  border-radius: 2px;
-}
+{background-color: var(--primary-red);}
 
 html
 {
@@ -208,7 +205,7 @@ img
   padding: 16px;
   box-shadow: 0px 1px 5px #00000010;
   backdrop-filter: blur(4px);
-  background-color: #fffffff1;
+  background-color: #fffffff4;
 }
 
 .nav-container
@@ -237,11 +234,22 @@ img
 .burguer .line
 {
   width: 32px;
-  height: 3px;
+  height: 2px;
 
-  border-radius: 3px;
   background-color: var(--primary-red);
+  transition: all 0.15s ease-in-out 0.05s ;
 }
+
+.line-top-change {transform: translateY(7px) rotate(42deg);}
+.line-center-change {opacity: 0;}
+.line-bottom-change {transform: translateY(-7px) rotate(-42deg);}
+
+
+.nav-menu-icon:hover > .burguer .line
+{background-color: var(--primary-red-highlight);}
+
+.nav-menu-icon #menu-text
+{padding: 12px 4px;}
 
 .nav-container .nav-menu
 {
@@ -253,11 +261,11 @@ img
   position: absolute;
   width: 400px;
   height: 91vh;
-  top: 9vh;
+  top: 9.01vh;
   left: 0;
 
   padding: 16px;
-  background-color: #fff;
+  background-color: #fffffff4;
   transition: transform 0.3s ease-in-out;
 }
 

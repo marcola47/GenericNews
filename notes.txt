@@ -1,21 +1,36 @@
-Nav Menu Padding:
+Mobile settings
+{
+  Nav Menu Padding:
   - 128px
   - 96px
   - 64px
 
-Mobile:
-  - Remove search button (until I figure out a way of making it decent)
+  Mobile:
+    - Remove search button (until I figure out a way of making it decent)
 
-Hot Topics:
-  - Make it a single column
-  - Video sections smaller
+  Hot Topics:
+    - Make it a single column
+    - Video sections smaller
 
-Editor Picks:
-  - Make it a single column
-  - Horizontal boxes become Vertical
+  Editor Picks:
+    - Make it a single column
+    - Horizontal boxes become Vertical
 
-Interesting For You:
-  - News on top of weather report and most read
+  Interesting For You:
+    - News on top of weather report and most read
 
-Footer:
-  - Make it a single column
+  Footer:
+    - Make it a single column
+}
+
+Pages
+{
+  About - Simple about page
+  Article - Boiler plate page for news articles
+  Category - Where you go when you click the burguer menu items
+  Contact - Simple contact page
+  Credentials - Login/Register page
+  Help - FAQ, support...
+  Subscription - Sell those mfckrs a 1 dollar subscription
+  Terms & Privacy - Self explanatory
+}
