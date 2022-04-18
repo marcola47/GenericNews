@@ -1,0 +1,104 @@
+/*** Container configs ***/
+.subs-container
+{
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
+  margin-block: 24px;
+
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-gap: 16px;
+
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 1px 1px 32px rgba(0, 0, 0, 0.05);
+}
+
+/*** Image and content configs ***/
+.subs-img
+{background: url(../img/subscription/subs_background_large.jpg) center center/cover;}
+
+.subs-content
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 48px 24px;
+}
+
+.subs-content h3
+{font-weight: 400;}
+
+/* Comparison list */
+.subs-comparison
+{
+  display: flex;
+  flex-direction: row;
+
+  margin: 42px 16px 16px 16px;
+}
+
+.subs-comparison h3
+{margin-left: 8px;}
+
+.list-separator
+{
+  width: 1px;
+  height: 91%;
+  align-self: flex-end;
+  margin-bottom: 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.subs-benefits
+{
+  font-size: 18px;
+  padding: 16px;
+}
+
+.benefits-item
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.benefits-item img
+{
+  width: 16px;
+  display: inline;
+}
+
+/* Access configs */
+.subs-devices
+{
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.devices-icons
+{
+  margin-top: 16px;
+  font-size: 4rem;
+  color: #333;
+}
+
+.devices-icons i
+{margin-inline: 16px;}
+
+/* Buttons */
+.subs-cta .btn
+{margin: 24px;}
+
+.subs-log-in span
+{color: var(--primary-red);}
+
+.subs-log-in span:hover
+{color: var(--primary-red-highlight);}

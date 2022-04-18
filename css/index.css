@@ -1,12 +1,3 @@
-/***** Variables *****/
-:root
-{
-  --primary-red: #be2e2f;
-  --orange: #f99500;
-  --blue: #009cff;
-  --purple: #a66bbe;
-}
-
 /***** News slider *****/
 /*** Slider frame ***/
 .news-slider-container
@@ -16,12 +7,8 @@
   margin-bottom: 96px;
 }
 
-.news-slider-content::-webkit-scrollbar
-{width: 0; background: transparent;}
-
-.news-slider-content::-webkit-scrollbar-thumb
-{background: transparent;}
-
+.news-slider-content::-webkit-scrollbar,
+.news-slider-content::-webkit-scrollbar-thumb,
 .news-slider-content::-webkit-scrollbar-thumb:hover
 {background: transparent;}
 
@@ -114,7 +101,6 @@
   max-width: 720px;
   margin-top: 64px;
 
-  text-align: justify;
   font-size: 1.3rem;
   font-weight: 300;
   text-shadow: 1px 1px 2px #000;
@@ -312,9 +298,6 @@
   width: 100%;
   border-radius: 2px;
 }
-
-.news-section-text
-{text-align: justify;}
 
 .editor-news-section .release-time
 {opacity: 0.8;}
