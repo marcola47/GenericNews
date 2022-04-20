@@ -12,7 +12,7 @@
 
   border-radius: 2px;
   background-color: #fff;
-  box-shadow: 1px 1px 32px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 32px rgba(224, 108, 0, 0.1);
 }
 
 /*** Image and content configs ***/
@@ -53,10 +53,7 @@
 }
 
 .subs-benefits
-{
-  font-size: 18px;
-  padding: 16px;
-}
+{padding: 16px;}
 
 .benefits-item
 {
@@ -78,10 +75,7 @@
 
 /* Access configs */
 .subs-devices
-{
-  margin-bottom: 16px;
-  text-align: center;
-}
+{text-align: center;}
 
 .devices-icons
 {
@@ -101,4 +95,13 @@
 {color: var(--primary-red);}
 
 .subs-log-in span:hover
+{color: var(--primary-red-highlight);}
+
+.btn-home
+{
+  margin-top: 8px;
+  color: var(--primary-red);
+}
+
+.btn-home:hover
 {color: var(--primary-red-highlight);}
