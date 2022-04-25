@@ -24,18 +24,12 @@ let arrowLeftArray = Array.from(arrowLeft);
 arrowLeftArray.forEach(arrow =>
   {
     arrow.addEventListener('click', () =>
-    {
-      sliderContainer.scrollBy(-300, 0);
-      console.log('clicked!');
-    });
-  })
+    {sliderContainer.scrollBy(-300, 0);});
+  });
 
 let arrowRightArray = Array.from(arrowRight);
 arrowRightArray.forEach(arrow =>
   {
     arrow.addEventListener('click', () =>
-    {
-      sliderContainer.scrollBy(300, 0);
-      console.log('clicked!');
-    });
-  })
+    {sliderContainer.scrollBy(300, 0);});
+  });
